@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+* {
+	box-sizing: border-box;
+}
+
+$white: #FFF;
+$grey: #3c3c3c;
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 54px;
+}
+h2 {
+	font-size: 34px;
+}
+h3 {
+	font-size: 20px;
+}
+.container p {
+	font-weight: 300;
+}
+
+.white {
+	color: $white;
+}
+.grey {
+	color: $grey;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+fieldset {
+	border: 2px groove $grey;
+	legend {
+		border-bottom: none;
+		width: 30%;
+	}
+}
