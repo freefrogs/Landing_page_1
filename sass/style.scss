@@ -1,3 +1,4 @@
+/* --GENERAL--*/
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 * {
@@ -10,19 +11,20 @@ $grey: #3c3c3c;
 h1, h2, h3 {
 	font-weight: bold;
 }
-h1 {
-	font-size: 54px;
-}
 h2 {
 	font-size: 34px;
 }
 h3 {
 	font-size: 20px;
+	letter-spacing: 2px;
+	padding-bottom: 4%;
 }
 .container p {
+	font-size: 16px;
 	font-weight: 300;
+	line-height: 1.5;
+	padding: 0;
 }
-
 .white {
 	color: $white;
 }
@@ -30,16 +32,160 @@ h3 {
 	color: $grey;
 }
 
+.inner-container {
+	width: 65%;
+	margin: 0 auto;
+	padding-bottom: 5%;
+}
 body {
+	max-width: 1900px;
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
 }
-
 fieldset {
-	border: 2px groove $grey;
+	border: 2px solid $grey;
+	width: 78%;
+	margin: 8% auto 13%;
 	legend {
 		border-bottom: none;
-		width: 30%;
+		width: 45%;
+		letter-spacing: 3px;
+		padding: 5px 0 15px;
+	}
+}
+
+/* --HEADER--*/
+.jumbotron {
+	background: url("../images/header_background.jpg") center 0/cover no-repeat;
+	h1 {
+		font-size: 54px;
+		letter-spacing: 7px;
+		line-height: 1.2;
+		padding-bottom: 3%;
+	}
+	p {
+		font-size: 15px;
+		line-height: 2;
+	}
+	img {
+		&:first-child,  {
+			padding-top: 20%;
+			padding-bottom: 7%;
+		}
+		&:last-child {
+			padding-top: 16%;
+			padding-bottom: 3%;
+		}
+	}
+	.inner-container {
+		padding: 0;
+	}
+}
+/* --ABOUT US-- */
+.small-inner-container {
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 4%;
+}
+
+/* --SERVICES-- */
+.services {
+	background: url("../images/service_background.jpg") center 0/cover no-repeat;
+	width: 100%;
+		fieldset {
+		border-color: $white;
+		width: 67%;
+		margin: 7% auto 9%;
+	}
+}
+
+/* --WHAT WE DO-- */
+.what-we-do {
+	img {
+		margin-top: 8%;
+		margin-bottom: 2%;
+	}
+	.inner-container p {
+		font-size: 14px;
+	}
+}
+/* --GALERY-- */
+.gallery-row {
+	&::before,
+	&::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+	div {
+		position: relative;
+		padding: 0 6px 6px 0;
+		float: left;
+		&:nth-child(3),
+		&:nth-child(6) {
+			padding-right: 0;
+		}
+		img {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			font-size: 34px;
+			font-size: bold;
+			letter-spacing: 2px;
+			color: $white;
+			position: absolute;
+			bottom: 12%;
+			left: 5%;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+	.col-548 {
+		width: 28.842%;
+	}
+	.col-802 {
+		width: 42.211%;
+	}
+	.col-550 {
+		width: 28.947%;
+	}
+}
+
+/* --CONTACT US-- */
+.contact-us {
+	h2 {
+		font-size: 30px;
+	}
+	fieldset {
+		margin-bottom: 0;
+	}
+	.btn {
+		border-radius: 0;
+		background-color: $grey;
+		padding: 3% 25%;
+		margin-top: 4%;
+		font-size: 16px;
+		letter-spacing: 2px;
+		&:hover {
+			color: $white;
+			background-color: #686767;
+		}
+	}
+}
+
+/* --FOOTER-- */
+footer {
+	padding: 5% 0;
+
+	img {
+		display: inline-block;
+	}
+	p {
+		display: inline-block;
+		font-size: 14px;
+		margin-left: 2%;
 	}
 }
