@@ -75,12 +75,9 @@ fieldset {
 
 /* --SERVICES-- */
 .services {
-  background: url("../images/service_background.jpg") center 0/cover no-repeat;
-  width: 100%; }
+  background: url("../images/service_background.jpg") center 0/cover no-repeat; }
   .services fieldset {
-    border-color: #FFF;
-    width: 67%;
-    margin: 7% auto 9%; }
+    border-color: #FFF; }
 
 /* --WHAT WE DO-- */
 .what-we-do img {
