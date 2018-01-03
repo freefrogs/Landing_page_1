@@ -102,7 +102,7 @@ fieldset {
     padding: 0; }
   .gallery-row div a {
     font-size: 34px;
-    font-size: bold;
+    font-weight: bold;
     letter-spacing: 2px;
     color: #FFF;
     position: absolute;
