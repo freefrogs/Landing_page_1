@@ -143,4 +143,51 @@ footer {
     font-size: 14px;
     margin-left: 2%; }
 
+/* --MEDIA-- */
+@media (max-width: 992px) {
+  .inner-container {
+    width: 80%; }
+
+  fieldset {
+    width: 100%; }
+
+  .gallery-row div:nth-child(2), .gallery-row div:nth-child(4) {
+    padding-right: 0; }
+  .gallery-row div:nth-child(3) {
+    padding-right: 6px; }
+  .gallery-row .col-1 {
+    width: 40.593%; }
+  .gallery-row .col-2 {
+    width: 59.407%; }
+  .gallery-row .col-3 {
+    width: 49.909%; }
+  .gallery-row .col-4 {
+    width: 50.091%; }
+  .gallery-row .col-5 {
+    width: 59.320%; }
+  .gallery-row .col-6 {
+    width: 40.680%; } }
+@media (max-width: 580px) {
+  .jumbotron h1 {
+    font-size: 34px; }
+
+  h2, .contact-us h2 {
+    font-size: 20px; }
+
+  h3 {
+    font-size: 18px; }
+
+  .contact-us .btn {
+    padding: 3%; }
+
+  fieldset legend {
+    width: 60%; }
+
+  .gallery-row [class*="col-"] {
+    width: 100%; }
+  .gallery-row div:nth-child(1), .gallery-row div:nth-child(2), .gallery-row div:nth-child(3), .gallery-row div:nth-child(4), .gallery-row div:nth-child(5), .gallery-row div:nth-child(6) {
+    padding: 6px; }
+  .gallery-row div a {
+    font-size: 20px; } }
+
 /*# sourceMappingURL=style.css.map */

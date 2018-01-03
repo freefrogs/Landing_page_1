@@ -114,7 +114,7 @@ fieldset {
 	content: "";
 	display: table;
 	clear: both;
-}
+	}
 	div {
 		position: relative;
 		padding: 0 6px 6px 0;
@@ -184,5 +184,62 @@ footer {
 		display: inline-block;
 		font-size: 14px;
 		margin-left: 2%;
+	}
+}
+
+/* --MEDIA-- */
+@media (max-width: 992px) {
+	.inner-container {
+	width: 80%;
+	}
+	fieldset {
+	width: 100%;
+	}
+	.gallery-row {
+		div {
+		&:nth-child(2),
+		&:nth-child(4) {
+				padding-right: 0;
+			}
+		&:nth-child(3), {
+				padding-right: 6px;
+			}
+		}
+		.col-1 {width: 40.593%;}
+		.col-2 {width: 59.407%;}
+		.col-3 {width: 49.909%;}
+		.col-4 {width: 50.091%;}
+		.col-5 {width: 59.320%;}
+		.col-6 {width: 40.680%;}
+	}
+}
+@media (max-width: 580px) {
+	.jumbotron h1 {
+		font-size: 34px;
+	}
+	h2, .contact-us h2  {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	.contact-us .btn {
+		padding: 3%;
+	}
+	fieldset legend {
+		width: 60%;
+	}
+	.gallery-row {
+		[class*="col-"] {
+		width: 100%;
+		}
+		div {
+			&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+				padding: 6px;
+			}
+			a {
+				font-size: 20px;
+			}
+		}
 	}
 }
